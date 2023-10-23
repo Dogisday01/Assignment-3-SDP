@@ -10,7 +10,7 @@ public class Charger implements ChargerInterface {
         this.phone = phone;
     }
 
-    public void charge(int chargeTill) throws InterruptedException {
+    public void charge(int chargeTill) throws InterruptedException { // updatable output of charging
         for (int i = phone.getBatteryPower(); i <= chargeTill; i++) {
             System.out.print("\rCharging... " + i + "%");
             Thread.sleep(200);

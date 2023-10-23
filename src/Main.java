@@ -1,7 +1,4 @@
 package src;
-import java.io.*;
-import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
         public static void main(String[] args) throws InterruptedException {
@@ -18,10 +15,3 @@ public class Main {
             chargerAdapter.charge(100);
         }
 }
-/*
-for (int i = 0; i <= 100; i++) {
-            System.out.print("\rThinking... " + i);
-            System.out.flush();
-            Thread.sleep(100);
-        }
- */

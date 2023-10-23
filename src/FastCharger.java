@@ -10,7 +10,7 @@ public class FastCharger {
     public void fastCharge(int chargeTill) throws InterruptedException {
         for (int i = phone.getBatteryPower(); i <= chargeTill; i++) {
             System.out.print("\rCharging... " + i + "%");
-            Thread.sleep(100);
+            Thread.sleep(100);// difference is that here sleep time is two times less
         }
         if(chargeTill == 100){
             System.out.println("\nPhone is fully charged");

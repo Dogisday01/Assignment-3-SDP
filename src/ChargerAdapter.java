@@ -2,7 +2,7 @@ package src;
 
 import src.Interfaces.ChargerInterface;
 
-public class ChargerAdapter implements ChargerInterface {
+public class ChargerAdapter implements ChargerInterface { // using adapter design pattern
 
 
         private FastCharger fastCharger;
@@ -12,9 +12,7 @@ public class ChargerAdapter implements ChargerInterface {
         }
 
         @Override
-        public void charge(int chargeTill) throws InterruptedException {
+        public void charge(int chargeTill) throws InterruptedException { // here fastCharge method of fastCharger is adapted to charge and now its written like Charger's method
             fastCharger.fastCharge(chargeTill);
         }
-
-
 }
