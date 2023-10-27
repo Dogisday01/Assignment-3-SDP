@@ -1,6 +1,8 @@
 package src;
 
-public class FastCharger {
+import src.Interfaces.FastChargerInterface;
+
+public class FastCharger implements FastChargerInterface {
     private Phone phone;
 
     public FastCharger(Phone phone) {
